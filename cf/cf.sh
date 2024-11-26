@@ -101,6 +101,7 @@ cat AS-4.csv
 echo
 echo "欧洲IPV4优选结果："
 cat EU-4.csv
+echo
 fi
 if [ -e 6.csv ]; then
 echo "IPV6最佳可用节点如下（取前三名）："
@@ -112,6 +113,7 @@ cat AS-6.csv
 echo
 echo "欧洲IPV6优选结果："
 cat EU-6.csv
+echo
 fi
 if [ ! -e 4.csv ] && [ ! -e 6.csv ]; then
 echo "运行出错，请检查网络依赖环境"
